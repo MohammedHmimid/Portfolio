@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About mee</title>
+</head>
+
+<style>
+
+:root{
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding:8%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    famille de polices : 'Josefin Sans', sans empattement ;
+    font-size:16px;
+    color:var(--lightColor)
+}
+    
+.container-images{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.container-images img{
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottum 1s , left 1s;
+}
+
+.shape{
+    height: 350px;
+    width: 400px;
+}
+
+.container-images:hover .shape{
+    bottom: 40px;
+}
+
+.container-images:hover .mee{
+    left: 45%;
+}
+
+.aboutMee{
+    background-color: var(--bgColor-2);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.programmation{
+    width: 400px;
+    height: 400px;
+    margin-top: 300px;
+}
+
+.aboutMee .container-text{
+    width: 35%;
+}
+
+.aboutMee .container-text h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.aboutMee .container-text P{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: var(--lightColor);
+    margin-left: 18px;
+}
+
+</style>
+
+
+<body>
+    
+
+    <section class="aboutMee" id="aboutMee">
+        <div class="container-images">
+            <img src="image/Programming-pana.png" alt="^programmation" class="programmation">
+        </div>
+        <div class="container-text">
+            <h1>About <span>Me</span></h1>
+            <h5>Front-End <span>Developper</span></h5><br>
+            <p>I'm Mohammed Hmimid I'm a "Front-End" web developer. I am able to create responsive sites on all devices and dynamic sites. On the other hand, I am a designer specializing in logos and publication cards. </p>
+        </div>
+    </section> 
+
+
+</body>
+</html>

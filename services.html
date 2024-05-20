@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+
+    <style>
+
+
+        :root{
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor:#ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding:8%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    famille de polices : 'Josefin Sans', sans empattement ;
+    font-size:16px;
+    color:var(--lightColor)
+}
+
+.Services{
+    background-color: var(--bgColor-1);
+    padding: var(--padding);
+}
+
+.text-center{
+    text-align: center;
+    margin-top: -60px;
+}
+
+.Services img{
+    width: 70px;
+    height: 70px;
+    color: white;
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 250px;
+    background-color: var(--primaryColor);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    height: 300px;
+    transition: .8s;
+}
+
+.card:hover{
+    margin-top: -10px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.692);
+}
+
+.Services h4{
+    color: var(--bgColor-1);
+    font-size: 25px;
+    text-align: center;
+}
+
+.Services p{
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+}
+
+    </style>
+
+<body>
+    
+    <section class="Services" id="Services">
+        <h1 class="text-center">OUR <span>Services</span></h1>
+        <div class="box">
+            <div class="card">
+                <img src="image/port.png" alt="portable">
+                <h4>Mobile Dev</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus labore, magnam inventore ab velit adipisci.</p>
+            </div>
+            <div class="card">
+                <img src="image/documment.png" alt="doc">
+                <h4>Web Dev</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus labore, magnam inventore ab velit adipisci.</p>
+            </div>
+            <div class="card">
+                <img src="image/info.png" alt="infographie">
+                <h4>Graphique Design</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus labore, magnam inventore ab velit adipisci.</p>
+            </div>
+            <div class="card">
+                <img src="image/video.png" alt="video">
+                <h4>Montage Vidéo</h4><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus labore, magnam inventore ab velit adipisci.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
